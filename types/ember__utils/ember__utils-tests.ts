@@ -78,6 +78,8 @@ import {
     // typeOf(EmberObject.extend());   // $ExpectType "class"
     // typeOf(EmberObject.create());   // $ExpectType "instance"
     typeOf(new Error('teamocil'));  // $ExpectType "error"
+    typeOf({});  // $ExpectType "object"
+    typeOf(new Object());  // $ExpectType "object"
 
     typeOf();
     typeOf(null);
@@ -97,6 +99,8 @@ import {
     typeOf(new Date());
     typeOf(FileList);
     typeOf(new Error('teamocil'));
+    typeOf({});
+    typeOf(new Object());
 })();
 
 (function() {

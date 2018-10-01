@@ -14,6 +14,7 @@ export interface TypeLookup {
     date: Date;
     null: null;
     undefined: undefined;
+    object: Object;
 }
 
 // TODO: TypeScript 3.0
